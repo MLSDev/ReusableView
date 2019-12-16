@@ -24,7 +24,7 @@ public protocol ViewModelHolderType: class, ReactiveCompatible {
 }
 
 public extension ViewModelHolderType {
-    public func prepareForUsage() {}
+    func prepareForUsage() {}
 }
 
 
