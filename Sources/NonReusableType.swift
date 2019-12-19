@@ -19,7 +19,7 @@ extension NonReusableType {
     }
 }
 
-extension NonReusableType where Self.ReactiveBase: AnyObject {
+extension NonReusableType where Self: AnyObject {
     public var viewModel: ViewModelType? {
         set {
             objc_sync_enter(self); defer { objc_sync_exit(self) }
